@@ -6,6 +6,9 @@ cc_library(
 		"//:windows": [
 			"//src/power/windows:windows",
 		],
+		"//conditions:default": [
+			"//src/power/linux:linux",
+		],
 	}),
 	visibility = ["//visibility:public"],
 )

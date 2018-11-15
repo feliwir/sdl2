@@ -6,6 +6,9 @@ cc_library(
 		"//:windows": [
 			"//src/timer/windows:windows",
 		],
+		"//conditions:default": [
+			"//src/timer/unix:unix",
+		],
 	}),
 	visibility = ["//visibility:public"],
 )

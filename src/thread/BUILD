@@ -15,6 +15,9 @@ cc_library(
 		"//:windows": [
 			"//src/thread/windows:windows",
 		],
+		"//conditions:default": [
+			"//src/thread/pthread:pthread",
+		],
 	}),
 	visibility = ["//visibility:public"],
 )

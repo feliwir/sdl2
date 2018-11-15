@@ -4,6 +4,9 @@ cc_library(
 		"//:windows": [
 			"//src/loadso/windows:windows",
 		],
+		"//conditions:default": [
+			"//src/loadso/dlopen:dlopen",
+		],
 	}),
 	visibility = ["//visibility:public"],
 )

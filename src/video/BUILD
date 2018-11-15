@@ -8,7 +8,13 @@ cc_library(
 			"//src/video/windows:windows",
 			"//src/video/khronos:khronos",
 			"//src/video/yuv2rgb:yuv2rgb",
-		]
+		],
+		"//conditions:default": [
+			"//src/video/dummy:dummy",
+			"//src/video/x11:x11",
+			"//src/video/khronos:khronos",
+			"//src/video/yuv2rgb:yuv2rgb",
+		],
 	}),
 	visibility = ["//visibility:public"],
 )

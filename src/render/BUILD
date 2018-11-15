@@ -10,7 +10,10 @@ cc_library(
 			"//src/render/opengles:opengles",
 			"//src/render/opengles2:opengles2",
 			"//src/render/software:software",
-		]
+		],
+		"//conditions:default": [
+			"//src/render/software:software",
+		],
 	}),
 	visibility = ["//visibility:public"],
 )
